@@ -1,0 +1,353 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #060000e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: url("images/sinam-movie-review.jpg") no-repeat center center/cover;*/
+  backdrop-filter: blur(5px);
+  opacity: 0.3;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*border: 4px solid gray;*/
+  border-radius: 20px;
+  z-index: 2;
+}
+
+header nav {
+  width: 100%;
+  height: 7.5%;
+  background-color: grey;
+  /*border: 1px solid #fff;*/
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo {
+  margin-left: 1px;
+  margin-top: 30px;
+}
+header nav .logo img {
+  height: 7vh;
+}
+header nav .brand {
+  width: 45%;
+  height: 80%;
+  /*border: 1px solid #fff;*/
+  color: #00e5ff;
+  font-family: "system-ui";
+  font-size: 35px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+header nav .brand:hover {
+  width: 45%;
+  height: 80%;
+  color: hsl(189, 18%, 86%);
+}
+header nav ul {
+  width: 60%;
+  height: 100%;
+  /*border: 1px solid #fff;*/
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+header nav ul li {
+  list-style-type: none;
+  padding: 3px 10px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "system-ui";
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+  color: gray;
+}
+
+/* nav end */
+.ads {
+  width: 300px;
+  height: 250px;
+  right: 55%;
+  top: 15%;
+  position: absolute;
+  display: flex;
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.336);
+  box-shadow: 10px rgb(8, 7, 7);
+}
+.ads1 {
+  width: 300px;
+  height: 250px;
+  right: 25%;
+  top: 15%;
+  position: absolute;
+  display: flex;
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.336);
+  box-shadow: 10px rgb(8, 7, 7);
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  top: 70%;
+  left: 27%;
+}
+.card img {
+  width: 200%;
+  height: 200%;
+}
+.content {
+  width: 200%;
+  height: 110%;
+  top: 20%;
+  left: 5%;
+  position: relative;
+  color: #fffdfd;
+}
+.button{
+ height: 55%;
+ width: 60%;
+ top: 20%;
+left: 20%;
+position: relative;
+color: #0f0101;
+}
+.button:hover{
+  height: 55%;
+  width: 60%;
+  top: 20%;
+ left: 20%;
+ position: relative;
+ color: #ff0101;
+}
+.button2{
+  height: 55%;
+  width: 60%;
+  top: 20%;
+ left: 20%;
+ position: relative;
+ color: #0f0101;
+ }
+ .button2:hover{
+   height: 55%;
+   width: 60%;
+   top: 20%;
+  left: 20%;
+  position: relative;
+  color: #ff0101;
+ }
+ @media only screen and (max-width: 1190px){
+  .card{
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 1024px){
+.card{
+  left: 21%;
+}
+.ads1{
+  right: 20%;
+}
+}
+@media only screen and (max-width: 912px){
+ .card img{
+  width: 200%;
+  height: 200%;
+ }
+ .content{
+  left: 70%;
+ } 
+}
+@media only screen and (max-width: 552px){
+  header nav .logo{
+    height: 3vh;
+  }
+  header nav .brand{
+    height: 75%;
+    font-size: 15px;
+    width: 40%;
+}
+.card img{
+  width: 140%;
+  height: 150%;
+}
+.ads1{
+  right: -7%;
+}
+.ads{
+  right: 47%;
+}
+.content{
+  left: 45%;
+}
+}
+@media only screen and (max-width: 412px){
+ Header nav {
+    width: 100%;
+    height: 12%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header nav .brand{
+  height: 20%;
+  width: 25%;
+  font-size: 15px;
+}
+header nav .logo{
+  margin-top: 5px;
+}
+header nav ul{
+  width: 63%;
+  height: 65%;
+}
+header nav ul li{
+  padding: 25px 10px;
+}
+header nav ul li a{
+  font-size: 65%;
+}
+header nav .search{
+  width: 60%;
+  height: 50%;
+}
+header .cards{
+  height: 33%;
+}
+header .card1{
+  right: 15%;
+  top: 55%;
+}
+header .card{
+  right: 15%;
+}
+}
+@media only screen and (max-width: 280px){
+  Header nav {
+    width: 100%;
+    height: 12%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  header nav .logo img{
+    height: 3vh;
+  }
+  header nav .brand{
+    height: 21%;
+    font-size: 10px;
+}
+header nav ul{
+  height: 75%;
+}
+header nav ul li a {
+  font-size: 6px;
+}
+header nav .search input{
+  width: 100%;
+  height: 33%;
+}
+header nav .search{
+  width: 40%;
+  height: 45%;
+}
+header .card {
+  right: 0%;
+  top: 20%;
+}
+header .cards .card{
+  width: 110px;
+}
+header .card1{
+  right: 0%;
+  top: 65%;
+}
+header .cards{
+  height: 45%;
+  width: 95%;
+}
+}
+@media only screen and (max-width: 541px){
+header nav .logo{
+  margin-left: 10px;
+}
+header nav .logo img{
+  height: 4vh;
+}
+header nav .brand{
+  width: 60%;
+}
+.ads1{
+ top: 47%;
+ right: 13%;
+}
+.ads{
+  right: 13%;
+}
+.card{
+  left: 7%;
+}
+.content{
+  left: 35%;
+}
+}
+@media only screen and (max-width: 360px){
+  Header nav{
+    height: 25%;
+  }
+  header nav .brand{
+    width: 59%;
+    font-size: xx-large;
+  }
+  header .card{
+    top: 95%;
+    left: 11%;
+}
+.card img{
+  width: 110%;
+  height: 130%;
+}
+.ads1{
+  top: 65%;
+  right: 10%;
+}
+.ads{
+  right: 10%;
+}
+.content{
+  left: 22%;
+}
+}
